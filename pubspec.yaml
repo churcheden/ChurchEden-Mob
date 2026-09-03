@@ -37,6 +37,8 @@ dependencies:
   bloc: ^9.2.1
   provider: ^6.1.5+1
   get_it: ^9.2.1
+  rxdart: ^0.28.0
+  dio: ^5.11.0
 
 dev_dependencies:
   flutter_test:
