@@ -39,6 +39,8 @@ dependencies:
   get_it: ^9.2.1
   rxdart: ^0.28.0
   dio: ^5.11.0
+  flutter_secure_storage: ^11.0.0
+  shared_preferences: ^2.5.5
 
 dev_dependencies:
   flutter_test:
