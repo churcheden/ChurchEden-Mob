@@ -1,3 +1,4 @@
+import 'package:church_eden_mob/feature/auth/presentation/widget/nearby_church_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -24,8 +25,7 @@ class FindYourChurchPage extends HookWidget {
             SearchBar(
               leading: SvgPicture.asset('assets/Images/search.svg'),
               trailing: [
-
-                SvgPicture.asset('assets/Images/horizontal-stroke.svg',),
+                SvgPicture.asset('assets/Images/horizontal-stroke.svg'),
               ],
               hintText: 'Search by Church name',
               elevation: WidgetStatePropertyAll(0),
@@ -44,6 +44,30 @@ class FindYourChurchPage extends HookWidget {
                     Text('Accra,Ghana'),
                   ],
                 ),
+              ],
+            ),
+            NearbyChurchTile(
+              title: 'Revival Chapel',
+              subtitle: 'Accra,Gh',
+              trailing: Icon(Icons.arrow_forward_ios_rounded),
+              leading: 'assets/Images/church-stroke.svg',
+            ),
+            SizedBox(height: 22,),
+            NearbyChurchTile(
+              title: "Can't find your Church ?",
+              subtitle: 'Request to add your Church to ChurchEden',
+              trailing: TextButton(
+                onPressed: () {},
+                child: Text('Request Church'),
+              ),
+              leading: 'assets/Images/church-stroke.svg',
+            ),
+            Row(
+              spacing:10,
+              mainAxisAlignment: .center,
+              children: [
+                SvgPicture.asset('assets/Images/lock.svg'),
+                Text('Secure and private'),
               ],
             ),
           ],
