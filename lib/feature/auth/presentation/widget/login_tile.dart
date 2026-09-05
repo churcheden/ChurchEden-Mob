@@ -19,8 +19,13 @@ class LoginTile extends StatelessWidget {
       leading: SvgPicture.asset(assetName),
       title: Text(title),
       subtitle: Text(subtitle),
-      titleTextStyle: GoogleFonts.inter(),
-      subtitleTextStyle: GoogleFonts.inter(),
+      titleTextStyle: GoogleFonts.inter(
+        fontWeight: .bold,
+        color: Colors.black,
+      ),
+      subtitleTextStyle: GoogleFonts.inter(
+        color: Colors.grey,
+      ),
     );
   }
 }
