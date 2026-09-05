@@ -5,8 +5,14 @@ class ContactInfoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Column(children: [
-
-    ]));
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Row(children: [Column(children: [])]   ),
+          ],
+        ),
+      ),
+    );
   }
 }

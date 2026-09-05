@@ -25,7 +25,9 @@ class NearbyChurchTile extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15.0),
         child: ListTile(
-          contentPadding: EdgeInsets.symmetric(horizontal: 15, vertical: 12),
+          contentPadding: !isSecond
+              ? EdgeInsets.symmetric(horizontal: 25, vertical: 25)
+              : EdgeInsets.symmetric(horizontal: 15, vertical: 12),
           leading: !isSecond
               ? Container(
                   height: 54,
