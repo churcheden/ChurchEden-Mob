@@ -16,16 +16,14 @@ class LoginTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: SvgPicture.asset(assetName),
+      leading: CircleAvatar(
+        backgroundColor: const Color(0xFFDCEEE1),
+        child: SvgPicture.asset(assetName ,),
+      ),
       title: Text(title),
       subtitle: Text(subtitle),
-      titleTextStyle: GoogleFonts.inter(
-        fontWeight: .bold,
-        color: Colors.black,
-      ),
-      subtitleTextStyle: GoogleFonts.inter(
-        color: Colors.grey,
-      ),
+      titleTextStyle: GoogleFonts.inter(fontWeight: .bold, color: Colors.black),
+      subtitleTextStyle: GoogleFonts.inter(color: Colors.grey),
     );
   }
 }

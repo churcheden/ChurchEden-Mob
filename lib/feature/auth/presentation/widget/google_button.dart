@@ -12,7 +12,7 @@ class GoogleButton extends StatelessWidget {
     final width=MediaQuery.of(context).size.width;
     final height=MediaQuery.of(context).size.height;
     return SizedBox(
-      height:height*0.08,
+      height:height*0.07,
       width:width,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
